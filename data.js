@@ -104,8 +104,8 @@ const accounts = [
     country: "United States",
     category: "Memoir",
     url: null,
-    goodreads: "https://www.goodreads.com/book/show/12408383-the-little-red-guard",
-    amazon: "https://www.amazon.com/Little-Red-Guard-Family-Memoir/dp/1594630909"
+    goodreads: "https://www.goodreads.com/book/show/13114766-the-little-red-guard",
+    amazon: "https://www.amazon.com/Little-Red-Guard-Family-Memoir/dp/1594486557"
   },
   {
     id: 10,
