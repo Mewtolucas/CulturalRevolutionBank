@@ -7,7 +7,9 @@ const accounts = [
     yearPublished: 1997,
     country: "United States",
     category: "Memoir",
-    url: null
+    url: null,
+    goodreads: "https://www.goodreads.com/book/show/413432.Red_Scarf_Girl",
+    amazon: "https://www.amazon.com/Red-Scarf-Girl-Cultural-Revolution/dp/0064462080"
   },
   {
     id: 2,
@@ -17,7 +19,9 @@ const accounts = [
     yearPublished: 1998,
     country: "China / United States",
     category: "Memoir",
-    url: null
+    url: null,
+    goodreads: "https://www.goodreads.com/en/book/show/25387260-the-cowshed",
+    amazon: "https://www.amazon.com/Cowshed-Memories-Chinese-Cultural-Revolution/dp/1590179269"
   },
   {
     id: 3,
@@ -27,7 +31,9 @@ const accounts = [
     yearPublished: 1986,
     country: "United States",
     category: "Memoir",
-    url: null
+    url: null,
+    goodreads: "https://www.goodreads.com/book/show/537404.Life_and_Death_in_Shanghai",
+    amazon: "https://www.amazon.com/Life-Death-Shanghai-Cheng-Nien/dp/0802145167"
   },
   {
     id: 4,
@@ -37,7 +43,9 @@ const accounts = [
     yearPublished: 1994,
     country: "United States",
     category: "Memoir",
-    url: null
+    url: null,
+    goodreads: "https://www.goodreads.com/book/show/92936.Red_Azalea",
+    amazon: "https://www.amazon.com/Red-Azalea-Anchee-Min/dp/1400096987"
   },
   {
     id: 5,
@@ -47,7 +55,9 @@ const accounts = [
     yearPublished: null,
     country: "United States",
     category: "Memoir",
-    url: null
+    url: null,
+    goodreads: "https://www.goodreads.com/book/show/25159285",
+    amazon: "https://www.amazon.com/Red-Sorrow-Memoir-Cultural-Revolution/dp/1628725869"
   },
   {
     id: 6,
@@ -57,7 +67,9 @@ const accounts = [
     yearPublished: 2003,
     country: "United States",
     category: "Memoir",
-    url: null
+    url: null,
+    goodreads: "https://www.goodreads.com/book/show/12340404-the-secret-piano",
+    amazon: "https://www.amazon.com/Secret-Piano-Labor-Goldberg-Variations/dp/1611090776"
   },
   {
     id: 7,
@@ -67,7 +79,9 @@ const accounts = [
     yearPublished: 1991,
     country: "United States",
     category: "Memoir",
-    url: null
+    url: null,
+    goodreads: "https://www.goodreads.com/book/show/1848.Wild_Swans",
+    amazon: "https://www.amazon.com/Wild-Swans-Three-Daughters-China/dp/0743246985"
   },
   {
     id: 8,
@@ -77,17 +91,21 @@ const accounts = [
     yearPublished: 2006,
     country: "United States / Tibet",
     category: "Memoir",
-    url: null
+    url: null,
+    goodreads: "https://www.goodreads.com/book/show/50878473-forbidden-memory",
+    amazon: "https://www.amazon.com/Forbidden-Memory-during-Cultural-Revolution/dp/1612349692"
   },
   {
     id: 9,
-    title: "Really Enough: A True Story of Tyranny, Courage and Comedy",
+    title: "The Little Red Guard: A Family Memoir",
     author: "Wenguang Huang",
-    description: "A family memoir showing how one family attempted to practice traditional funeral rites despite Communist bans during the CR. Documents resistance to state control over private and family life.",
-    yearPublished: 2010,
+    description: "A family memoir showing how one family attempted to practice traditional funeral rites and honor a dying grandmother despite Communist bans during the CR. Documents resistance to state control over private and family life.",
+    yearPublished: 2012,
     country: "United States",
     category: "Memoir",
-    url: null
+    url: null,
+    goodreads: "https://www.goodreads.com/book/show/12408383-the-little-red-guard",
+    amazon: "https://www.amazon.com/Little-Red-Guard-Family-Memoir/dp/1594630909"
   },
   {
     id: 10,
@@ -97,17 +115,21 @@ const accounts = [
     yearPublished: 1997,
     country: "United States",
     category: "Memoir",
-    url: null
+    url: null,
+    goodreads: "https://www.goodreads.com/book/show/82751.Chinese_Cinderella",
+    amazon: "https://www.amazon.com/Chinese-Cinderella-Story-Unwanted-Daughter/dp/0385740077"
   },
   {
     id: 11,
-    title: "China's Red Years: The Great Leap Forward and the Cultural Revolution",
+    title: "Red China Blues: My Long March from Mao to Now",
     author: "Jan Wong",
-    description: "A Canadian-Chinese journalist's account of living through the CR as a Western-educated woman. Documents struggle sessions, labor assignments, and gradual disillusionment leading to journalism.",
+    description: "A Canadian-Chinese journalist's account of living through the CR as a Western-educated woman who arrived as a Maoist true believer. Documents struggle sessions, labor assignments, and gradual disillusionment leading to journalism.",
     yearPublished: 1996,
     country: "United States / Canada",
     category: "Memoir",
-    url: null
+    url: null,
+    goodreads: "https://www.goodreads.com/book/show/1502744.Red_China_Blues",
+    amazon: "https://www.amazon.com/Red-China-Blues-Long-March/dp/0385482329"
   },
   {
     id: 12,
@@ -117,27 +139,33 @@ const accounts = [
     yearPublished: 2012,
     country: "United States",
     category: "Memoir",
-    url: null
+    url: null,
+    goodreads: "https://www.goodreads.com/book/show/15811544-bend-not-break",
+    amazon: "https://www.amazon.com/Bend-Not-Break-Life-Worlds/dp/1591845521"
   },
   {
     id: 13,
     title: "The Execution of Mayor Yin and Other Stories from the Great Proletarian Cultural Revolution",
-    author: "Ah Cheng",
-    description: "Fictionalized accounts based on the author's lived experiences during the CR and experiences of people known to the author. Published as a story collection.",
-    yearPublished: null,
+    author: "Chen Ruoxi",
+    description: "Fictionalized short stories by Chen Ruoxi (Chen Jo-Hsi) based on her lived experience returning to China and witnessing the CR firsthand. One of the earliest literary accounts to reach Western readers. Published as a story collection.",
+    yearPublished: 1978,
     country: "United States",
     category: "Literary Fiction",
-    url: null
+    url: null,
+    goodreads: "https://www.goodreads.com/book/show/658565.The_Execution_of_Mayor_Yin_and_Other_Stories_from_the_Great_Proletarian_Cultural_Revolution",
+    amazon: "https://www.amazon.com/Execution-Stories-Proletarian-Cultural-Revolution/dp/0253216907"
   },
   {
     id: 14,
-    title: "Confessions: An Innocent Man's Account of his Arrest, Interrogation and Imprisonment in Communist China",
+    title: "Confessions: An Innocent Life in Communist China",
     author: "Kang Zhengguo",
     description: "Attempted to obtain a copy of Doctor Zhivago during the CR. Arrested and sentenced to a rural labor reeducation camp. Documents the severity of persecution for minor acts of intellectual curiosity.",
-    yearPublished: 1988,
+    yearPublished: 2007,
     country: "United States",
     category: "Memoir",
-    url: null
+    url: null,
+    goodreads: "https://www.goodreads.com/book/show/1052379.Confessions",
+    amazon: "https://www.amazon.com/Confessions-Innocent-Life-Communist-China/dp/0393332004"
   },
   {
     id: 15,
@@ -147,7 +175,9 @@ const accounts = [
     yearPublished: 2002,
     country: "United States",
     category: "Oral History",
-    url: null
+    url: null,
+    goodreads: "https://www.goodreads.com/book/show/178796.The_Good_Women_of_China",
+    amazon: "https://www.amazon.com/Good-Women-China-Hidden-Voices/dp/1400030803"
   },
   {
     id: 16,
@@ -157,7 +187,9 @@ const accounts = [
     yearPublished: 2015,
     country: "United States",
     category: "Video / Oral History Collection",
-    url: "https://digital.library.pitt.edu/collection/chinas-cultural-revolution-memories-the-CR10-project"
+    url: "https://digital.library.pitt.edu/collection/chinas-cultural-revolution-memories-the-CR10-project",
+    goodreads: null,
+    amazon: null
   },
   {
     id: 17,
@@ -167,7 +199,9 @@ const accounts = [
     yearPublished: 2016,
     country: "United States",
     category: "Archival Collection",
-    url: "https://www.library.dartmouth.edu/digital/digital-collections/down-countryside-movement"
+    url: "https://www.library.dartmouth.edu/digital/digital-collections/down-countryside-movement",
+    goodreads: null,
+    amazon: null
   },
   {
     id: 18,
@@ -177,7 +211,9 @@ const accounts = [
     yearPublished: 1994,
     country: "China / United States",
     category: "Memoir",
-    url: "https://collections.dartmouth.edu/teitexts/rusticated-youth-tei/diplomatic/Life_starts_at_Sixteen-diplomatic.html"
+    url: "https://collections.dartmouth.edu/teitexts/rusticated-youth-tei/diplomatic/Life_starts_at_Sixteen-diplomatic.html",
+    goodreads: null,
+    amazon: null
   },
   {
     id: 19,
@@ -187,7 +223,9 @@ const accounts = [
     yearPublished: 2020,
     country: "United States",
     category: "Documentary",
-    url: "https://culturalrevolution.pitt.edu/"
+    url: "https://culturalrevolution.pitt.edu/",
+    goodreads: null,
+    amazon: null
   },
   {
     id: 20,
@@ -197,7 +235,9 @@ const accounts = [
     yearPublished: 2015,
     country: "United States",
     category: "Video / Oral History Collection",
-    url: "https://digital.library.pitt.edu/islandora/object/pitt:7198590/viewer"
+    url: "https://digital.library.pitt.edu/islandora/object/pitt:7198590/viewer",
+    goodreads: null,
+    amazon: null
   },
   {
     id: 21,
@@ -207,7 +247,9 @@ const accounts = [
     yearPublished: null,
     country: "China / United States",
     category: "Archival Collection",
-    url: null
+    url: null,
+    goodreads: null,
+    amazon: null
   },
   {
     id: 22,
@@ -217,7 +259,9 @@ const accounts = [
     yearPublished: null,
     country: "United States",
     category: "Documentary",
-    url: null
+    url: null,
+    goodreads: null,
+    amazon: null
   },
   {
     id: 23,
@@ -227,7 +271,9 @@ const accounts = [
     yearPublished: 1991,
     country: "United States",
     category: "Oral History",
-    url: null
+    url: null,
+    goodreads: "https://www.goodreads.com/book/show/162134.Ten_Years_of_Madness",
+    amazon: "https://www.amazon.com/Ten-Years-Madness-Histories-Revolution/dp/083512584X"
   },
   {
     id: 24,
@@ -237,7 +283,9 @@ const accounts = [
     yearPublished: 2008,
     country: "United States",
     category: "Oral History",
-    url: null
+    url: null,
+    goodreads: "https://www.goodreads.com/book/show/61271867-victims-of-the-cultural-revolution",
+    amazon: "https://www.amazon.com/Victims-Cultural-Revolution-Testimonies-Tragedy/dp/0861542231"
   },
   {
     id: 25,
@@ -247,7 +295,9 @@ const accounts = [
     yearPublished: null,
     country: "United States",
     category: "Oral History",
-    url: null
+    url: null,
+    goodreads: null,
+    amazon: null
   },
   {
     id: 26,
@@ -257,7 +307,9 @@ const accounts = [
     yearPublished: null,
     country: "United States",
     category: "Oral History",
-    url: null
+    url: null,
+    goodreads: "https://www.goodreads.com/en/book/show/26493889-mao-s-lost-children",
+    amazon: "https://www.amazon.com/Maos-Lost-Children-Rusticated-Revolution/dp/193738568X"
   },
   {
     id: 27,
@@ -267,7 +319,9 @@ const accounts = [
     yearPublished: 2006,
     country: "United States",
     category: "Academic Collection",
-    url: null
+    url: null,
+    goodreads: "https://www.goodreads.com/book/show/815863.The_Chinese_Cultural_Revolution_as_History",
+    amazon: "https://www.amazon.com/Cultural-Revolution-Shorenstein-Asia-Pacific-Research/dp/0804753490"
   },
   {
     id: 28,
@@ -277,27 +331,33 @@ const accounts = [
     yearPublished: null,
     country: "United States",
     category: "Academic Collection",
-    url: null
+    url: null,
+    goodreads: "https://www.goodreads.com/book/show/971635.Proletarian_Power",
+    amazon: "https://www.amazon.com/Proletarian-Power-Shanghai-Revolution-Transitions-Asia/dp/0813321654"
   },
   {
     id: 29,
     title: "The Killing Wind: A Chinese County's Descent Into Madness During the Cultural Revolution",
-    author: "Yang Jisheng",
-    description: "A detailed account of violence at the county level based on interviews and archival research. Documents local persecution and chaos.",
-    yearPublished: null,
+    author: "Tan Hecheng",
+    description: "A detailed account of mass killings in Dao County, Hunan Province, based on interviews and archival research. Documents how ordinary people became perpetrators of extraordinary violence during the CR.",
+    yearPublished: 2017,
     country: "China / United States",
     category: "Academic Collection",
-    url: null
+    url: null,
+    goodreads: "https://www.goodreads.com/book/show/29953708-the-killing-wind",
+    amazon: "https://www.amazon.com/Killing-Wind-Chinese-Cultural-Revolution/dp/0190622520"
   },
   {
     id: 30,
-    title: "Inner Mongolia During the Cultural Revolution: A Pogrom and Its Aftermath",
-    author: "Cheng Tiejun, Uradyn E. Bulag, Mark Selden",
+    title: "A Chinese Rebel beyond the Great Wall: The Cultural Revolution and Ethnic Pogrom in Inner Mongolia",
+    author: "Cheng Tiejun (TJ Cheng); eds. Uradyn E. Bulag, Mark Selden",
     description: "Cheng Tiejun provides first-person recollections of being a Red Guard in Inner Mongolia. Documents persecution of Mongol intellectuals and leaders, resulting in 16,000+ deaths.",
     yearPublished: 2023,
     country: "United States",
     category: "Academic Collection",
-    url: null
+    url: null,
+    goodreads: "https://www.goodreads.com/book/show/123179980",
+    amazon: "https://www.amazon.com/Chinese-Rebel-beyond-Great-Wall/dp/0226826848"
   },
   {
     id: 31,
@@ -307,7 +367,9 @@ const accounts = [
     yearPublished: 2000,
     country: "United States / France",
     category: "Literary Fiction",
-    url: null
+    url: null,
+    goodreads: "https://www.goodreads.com/book/show/533465.Balzac_and_the_Little_Chinese_Seamstress",
+    amazon: "https://www.amazon.com/Balzac-Little-Chinese-Seamstress-Novel/dp/0385722206"
   },
   {
     id: 32,
@@ -317,7 +379,9 @@ const accounts = [
     yearPublished: 1999,
     country: "United States",
     category: "Literary Fiction",
-    url: null
+    url: null,
+    goodreads: "https://www.goodreads.com/book/show/235773.Waiting",
+    amazon: "https://www.amazon.com/Waiting-Novel-Ha-Jin/dp/0375706410"
   },
   {
     id: 33,
@@ -327,7 +391,9 @@ const accounts = [
     yearPublished: 2016,
     country: "Canada / United States",
     category: "Literary Fiction",
-    url: null
+    url: null,
+    goodreads: "https://www.goodreads.com/en/book/show/31549906-do-not-say-we-have-nothing",
+    amazon: "https://www.amazon.com/Do-Not-Say-Have-Nothing/dp/039360988X"
   },
   {
     id: 34,
@@ -337,7 +403,9 @@ const accounts = [
     yearPublished: 2016,
     country: "United States",
     category: "Journalism",
-    url: "https://foreignpolicy.com/2016/05/16/my-uncle-was-a-red-guard-in-chinas-cultural-revolution-he-isnt-sorry/"
+    url: "https://foreignpolicy.com/2016/05/16/my-uncle-was-a-red-guard-in-chinas-cultural-revolution-he-isnt-sorry/",
+    goodreads: null,
+    amazon: null
   },
   {
     id: 35,
@@ -347,7 +415,9 @@ const accounts = [
     yearPublished: 2016,
     country: "United States",
     category: "Video / Oral History Collection",
-    url: "https://www.youtube.com/watch?v=rieA7USjDio"
+    url: "https://www.youtube.com/watch?v=rieA7USjDio",
+    goodreads: null,
+    amazon: null
   },
   {
     id: 36,
@@ -357,7 +427,9 @@ const accounts = [
     yearPublished: 2016,
     country: "United States",
     category: "Journalism",
-    url: "https://aaww.org/surviving-chinas-cultural-revolution/"
+    url: "https://aaww.org/surviving-chinas-cultural-revolution/",
+    goodreads: null,
+    amazon: null
   },
   {
     id: 37,
@@ -367,7 +439,9 @@ const accounts = [
     yearPublished: 2016,
     country: "United States",
     category: "Journalism",
-    url: "https://gantnews.com/2016/05/15/confessions-of-a-red-guard-50-years-after-chinas-cultural-revolution/"
+    url: "https://gantnews.com/2016/05/15/confessions-of-a-red-guard-50-years-after-chinas-cultural-revolution/",
+    goodreads: null,
+    amazon: null
   },
   {
     id: 38,
@@ -377,7 +451,9 @@ const accounts = [
     yearPublished: 2015,
     country: "United States",
     category: "Video / Oral History Collection",
-    url: "https://guides.lib.unc.edu/cul_revolution/primary"
+    url: "https://guides.lib.unc.edu/cul_revolution/primary",
+    goodreads: null,
+    amazon: null
   },
   {
     id: 39,
@@ -387,7 +463,9 @@ const accounts = [
     yearPublished: 2015,
     country: "United States",
     category: "Video / Oral History Collection",
-    url: "https://digital.library.pitt.edu/collection/chinas-cultural-revolution-memories-the-CR10-project"
+    url: "https://digital.library.pitt.edu/collection/chinas-cultural-revolution-memories-the-CR10-project",
+    goodreads: null,
+    amazon: null
   },
   {
     id: 40,
@@ -397,7 +475,9 @@ const accounts = [
     yearPublished: 2015,
     country: "United States",
     category: "Video / Oral History Collection",
-    url: "https://digital.library.pitt.edu/collection/chinas-cultural-revolution-memories-the-CR10-project"
+    url: "https://digital.library.pitt.edu/collection/chinas-cultural-revolution-memories-the-CR10-project",
+    goodreads: null,
+    amazon: null
   },
   {
     id: 41,
@@ -407,17 +487,21 @@ const accounts = [
     yearPublished: 2015,
     country: "United States",
     category: "Video / Oral History Collection",
-    url: "https://digital.library.pitt.edu/collection/chinas-cultural-revolution-memories-the-CR10-project"
+    url: "https://digital.library.pitt.edu/collection/chinas-cultural-revolution-memories-the-CR10-project",
+    goodreads: null,
+    amazon: null
   },
   {
     id: 42,
-    title: "Mao's Last Revolution: The Political Evolution of Mao Zedong",
+    title: "Mao's Last Revolution",
     author: "Roderick MacFarquhar and Michael Schoenhals",
     description: "A comprehensive account incorporating extensive interviews, memoirs, and newly available documents. First-hand testimonies are integrated throughout to document Mao's political machinations and CR experiences from multiple perspectives.",
     yearPublished: 2006,
     country: "United States",
     category: "Academic Collection",
-    url: null
+    url: null,
+    goodreads: "https://www.goodreads.com/book/show/9747.Mao_s_Last_Revolution",
+    amazon: "https://www.amazon.com/Maos-Last-Revolution-Roderick-MacFarquhar/dp/0674023323"
   }
 ];
 

@@ -162,13 +162,22 @@ function cardHTML(a) {
 
       <div class="card-footer">
         <span>${escapeHtml(a.country || '')} · ${yearStr}</span>
-        ${a.url ? `<span class="card-has-url">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-            <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
-          </svg>
-          Link available
-        </span>` : ''}
+        <span class="card-badges">
+          ${(a.goodreads || a.amazon) ? `<span class="card-has-purchase" title="Available to purchase">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M2 3h2l.4 2M7 13h10l4-8H5.4"/>
+              <circle cx="7" cy="19" r="1"/><circle cx="17" cy="19" r="1"/>
+            </svg>
+            Buy
+          </span>` : ''}
+          ${a.url ? `<span class="card-has-url">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+            Online
+          </span>` : ''}
+        </span>
       </div>
     </article>`;
 }
@@ -264,13 +273,27 @@ function openModal(id) {
         <p class="modal-description-heading">Description &amp; Context</p>
         <p class="modal-description">${escapeHtml(a.description)}</p>
 
-        ${a.url ? `<a class="modal-link" href="${escapeHtml(a.url)}" target="_blank" rel="noopener noreferrer">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-            <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
-          </svg>
-          Visit Source
-        </a>` : ''}
+        ${(a.url || a.goodreads || a.amazon) ? `<div class="modal-links">
+          ${a.url ? `<a class="modal-link modal-link-primary" href="${escapeHtml(a.url)}" target="_blank" rel="noopener noreferrer">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+            Visit Source
+          </a>` : ''}
+          ${a.goodreads ? `<a class="modal-link modal-link-goodreads" href="${escapeHtml(a.goodreads)}" target="_blank" rel="noopener noreferrer">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M2 3h2l.4 2M7 13h10l4-8H5.4"/><circle cx="7" cy="19" r="1"/><circle cx="17" cy="19" r="1"/>
+            </svg>
+            Goodreads
+          </a>` : ''}
+          ${a.amazon ? `<a class="modal-link modal-link-amazon" href="${escapeHtml(a.amazon)}" target="_blank" rel="noopener noreferrer">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+            Buy on Amazon
+          </a>` : ''}
+        </div>` : ''}
       </div>
 
       <div class="modal-footer">

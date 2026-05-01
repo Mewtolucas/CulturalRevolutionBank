@@ -305,12 +305,32 @@ body {
   color: var(--muted);
 }
 
-.card-has-url {
+.card-badges {
+  display: flex;
+  gap: .35rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-has-url,
+.card-has-purchase {
   display: inline-flex;
   align-items: center;
   gap: .25rem;
-  color: var(--red);
   font-weight: 600;
+  font-size: .72rem;
+  padding: .15rem .45rem;
+  border-radius: 2rem;
+}
+
+.card-has-url {
+  color: var(--red);
+  background: var(--red-light);
+}
+
+.card-has-purchase {
+  color: #1a5e2a;
+  background: #f0fdf4;
 }
 
 .fav-btn {
@@ -447,24 +467,44 @@ body {
   color: var(--ink-soft);
 }
 
+.modal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem;
+  margin-top: 1.5rem;
+}
+
 .modal-link {
   display: inline-flex;
   align-items: center;
   gap: .5rem;
-  margin-top: 1.5rem;
   padding: .65rem 1.25rem;
-  background: var(--red);
-  color: #fff;
   border-radius: var(--radius);
   text-decoration: none;
   font-family: sans-serif;
   font-size: .88rem;
   font-weight: 600;
-  transition: background var(--transition), transform var(--transition);
+  transition: filter var(--transition), transform var(--transition);
 }
 .modal-link:hover {
-  background: var(--red-dark);
+  filter: brightness(.9);
   transform: translateY(-1px);
+}
+
+.modal-link-primary {
+  background: var(--red);
+  color: #fff;
+}
+
+.modal-link-goodreads {
+  background: #f4f1ea;
+  color: #372213;
+  border: 1.5px solid #d6cbb7;
+}
+
+.modal-link-amazon {
+  background: #ff9900;
+  color: #111;
 }
 
 .modal-footer {
