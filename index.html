@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A searchable, interactive archive of 42+ first-hand accounts, memoirs, oral histories, and documentary collections from China's Cultural Revolution (1966–1976).">
+  <meta name="keywords" content="Cultural Revolution, China, first-hand accounts, memoirs, oral histories, Mao Zedong, sent-down youth, Red Guards, primary sources">
+  <meta name="author" content="Cultural Revolution Archive">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Cultural Revolution First-Hand Accounts Archive">
+  <meta property="og:description" content="A searchable, interactive archive of first-hand accounts, memoirs, oral histories, and documentary collections from China's Cultural Revolution (1966–1976).">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cultural Revolution First-Hand Accounts Archive">
+  <meta name="twitter:description" content="A searchable archive of 42+ first-hand accounts from China's Cultural Revolution.">
+
+  <title>Cultural Revolution First-Hand Accounts Archive</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ── Header ── -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <div class="header-badge">Primary Source Archive</div>
+      <h1>Cultural Revolution<br><span>First-Hand Accounts</span></h1>
+      <p class="header-subtitle">
+        A searchable archive of memoirs, oral histories, documentaries, and scholarly collections
+        documenting lived experience during China's Cultural Revolution (1966–1976).
+      </p>
+      <div class="header-meta" aria-label="Archive statistics">
+        <div class="meta-stat">
+          <span class="num" id="totalCount">–</span>
+          <span class="lbl">Accounts Listed</span>
+        </div>
+        <div class="meta-stat">
+          <span class="num">8</span>
+          <span class="lbl">Categories</span>
+        </div>
+        <div class="meta-stat">
+          <span class="num">300+</span>
+          <span class="lbl">Individual Testimonies</span>
+        </div>
+        <div class="meta-stat">
+          <span class="num" id="favCount">0</span>
+          <span class="lbl">Saved</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Controls bar ── -->
+  <nav class="controls-bar" role="search" aria-label="Search and filter accounts">
+    <div class="controls-inner">
+      <!-- Search -->
+      <div class="search-wrap">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="Search by title, author, keyword…"
+          aria-label="Search accounts"
+          autocomplete="off"
+          spellcheck="false"
+        >
+      </div>
+
+      <!-- Category filter -->
+      <div class="filter-wrap">
+        <label for="categorySelect">Category:</label>
+        <select id="categorySelect" aria-label="Filter by category">
+          <!-- Populated by script.js -->
+        </select>
+      </div>
+
+      <!-- Clear button -->
+      <button class="btn-clear" id="clearBtn" aria-label="Clear all filters">
+        Clear filters
+      </button>
+
+      <!-- Live results count -->
+      <span class="results-count" id="resultsCount" role="status" aria-live="polite">
+        Loading…
+      </span>
+    </div>
+  </nav>
+
+  <!-- ── Main content ── -->
+  <main class="main-content" id="main">
+    <div
+      class="accounts-grid"
+      id="accountsGrid"
+      role="list"
+      aria-label="Cultural Revolution accounts"
+    >
+      <!-- Cards rendered by script.js -->
+    </div>
+  </main>
+
+  <!-- ── Modal overlay ── -->
+  <div
+    class="modal-overlay"
+    id="modalOverlay"
+    role="presentation"
+    aria-hidden="true"
+  >
+    <!-- Modal content injected by script.js -->
+  </div>
+
+  <!-- ── Toast notification ── -->
+  <div id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- ── Footer ── -->
+  <footer class="site-footer" role="contentinfo">
+    <p>
+      Cultural Revolution First-Hand Accounts Archive &nbsp;·&nbsp;
+      Compiled for educational and historical research purposes.
+    </p>
+    <p style="margin-top:.5rem;">
+      Sources span 1966–present &nbsp;·&nbsp;
+      Accounts in English, Chinese, and translation &nbsp;·&nbsp;
+      Archive is non-commercial and freely accessible.
+    </p>
+  </footer>
+
+  <!-- Data and logic -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
